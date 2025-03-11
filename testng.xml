@@ -1,0 +1,10 @@
+<suite name="SauceDemoTests">
+    <test name="Full test suite">
+        <classes>
+            <class name="org.example.tests.LoginTest"/>
+            <class name="org.example.tests.PurchaseTest"/>
+            <class name="org.example.tests.CartTest"/>
+            <class name="org.example.tests.LogoutTest"/>
+        </classes>
+    </test>
+</suite>
