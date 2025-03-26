@@ -29,7 +29,7 @@ public class BaseTest {
             loginPage.login("standard_user", "secret_sauce");
     }
 
-    @AfterMethod
+    @AfterClass
     public void teardown() {
         if (driver != null) {
             driver.quit();
