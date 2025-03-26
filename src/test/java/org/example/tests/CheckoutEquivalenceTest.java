@@ -38,7 +38,7 @@ public class CheckoutEquivalenceTest extends BaseTest {
             checkoutPage.completePurchase();
             Assert.assertTrue(checkoutPage.isPurchaseSuccessful(), "The purchase should be successful.");
         } else {
-            WebDriverWait wait = new WebDriverWait(driver, 5);
+            WebDriverWait wait = new WebDriverWait(driver, 1);
             String errorText = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("[data-test='error']"))).getText();
 
             Assert.assertEquals(errorText, expectedResult, "Error message should match expected.");
